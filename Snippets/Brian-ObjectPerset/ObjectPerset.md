@@ -29,10 +29,3 @@ Blendable: true
 {perset;PERSET_KEY;{replace;{perget;PERSET_KEY};Apple: (\d+);Apple: {math;{get;apple} + {get;newApplesAdded}}} // New value would be 7
 {perset;PERSET_KEY;{replace;{perget;PERSET_KEY};Apple: (\d+);Apple: 7} // Value will be 7 making our fetched 'apple' variable also useless
 ```
-
-## Other
-**RegEx Patterns**
-```regex
-(\d+) - for numbers only
-(\w+) - for words/letters only
-```
