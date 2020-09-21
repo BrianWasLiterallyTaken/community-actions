@@ -22,4 +22,4 @@ Experience: 15326
 KDR: 12.5
 Winrate: 2.33
 ```
-Fetched from [Brian101-Gamble](https://github.com/atlasbot/community-actions/tree/master/Economy/Brian101-Gamble).
+Widely used in [Brian101-Gamble](https://github.com/atlasbot/community-actions/tree/master/Economy/Brian101-Gamble).
