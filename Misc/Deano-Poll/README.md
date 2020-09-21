@@ -12,4 +12,4 @@ The Poll command allows a user to create a reaction-based poll.
 **Notes**
 You must supply between two and eight options.
 
-*Thanks to* `BrianWasTaken#9999` *for help improving script*
+*Thanks to* `BrianWasTaken#9793` *for help improving script*
