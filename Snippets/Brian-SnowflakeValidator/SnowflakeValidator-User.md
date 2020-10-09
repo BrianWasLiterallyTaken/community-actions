@@ -7,7 +7,7 @@
 
 **Code**
 ```sh
-{if;{utils.isSnowflake;{channel.id;{args}}};
+{if;{utils.isSnowflake;{user.id;{args}}};
   DO_THIS
   ;
   ELSE_DO_THIS
