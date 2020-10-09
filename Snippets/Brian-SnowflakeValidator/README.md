@@ -1,7 +1,7 @@
 # Snowflake Validator
 This snippet parses user arguments into a valid Discord snowflake.
 
-**Examples:**\
+**Examples:**
 > **Legend**\
 `<Valid ...>` - means the statement is true\
 `<Invalid ...>` - means the statement is invalid or false
