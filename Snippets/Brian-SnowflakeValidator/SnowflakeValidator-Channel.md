@@ -3,7 +3,7 @@
 **Instructions:**
 * Replace `DO_THIS` with the code you want to run if validation is successful.
 * Replace `ELSE_DO_THIS` with the code you want to run if validation is invalid.
-* Optional - Replace `{args}` with anything like the `{get}` tag.
+* Optional — Replace `{args}` with anything like the `{get}` tag.
 
 **Code**
 ```sh
