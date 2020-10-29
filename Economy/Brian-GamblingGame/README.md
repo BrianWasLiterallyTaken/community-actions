@@ -34,21 +34,11 @@ A very fun, easy-to-use gambling game made for Atlas.
 
 	Whitelisted: true
 	```
-	* `Pocket` starts off with `50,000` coins
-	* `Vault` and `Space` starts off with `100,000` coins equally for both values
-	* `Multiplier` is our base rate of how high or low your winnings are
-	* `Experience` whenever you reach a specific level, you gain a random multiplier
-	* `Wins` how many times you've won a game of gamble or slots
-	* `Won` overall coins you've won from games
-	* `Loses` how many times you lost a game of gamble or slots
-	* `Lost` overall coins you've lost from games
 4. You're now done! You can now play the game.
 
 
 ### Command Information
-> **Legend**\
-**<>** - required arguments\
-**[]** - optional arguments
+> **Legend:** **<>** - required arguments \| **[]** - optional arguments
 
 Command  | Description | Usage | Requires Whitelist
 :------: | :---------: | :---: | :----------------:
@@ -70,15 +60,13 @@ flip 	 | flip a coin! | `a!flip <amount>` | true
 
 **Key Names**
     Key	   	| 		Description 		    	  | Default Value 
-    :-:	   	| 		:---------: 		    	  | :-----------: 
+   :---:   	| 		:---------: 		    	  | :-----------: 
 **Pocket** 	| The current amount on a user's pocket  	  | **`50,000`**
 **Vault**  	| The space where the user store coins   	  | **`100,000`**
 **Space**  	| The amount of space to hold coins on vault 	  | **`100,000`**
 **Gems**   	| Used to buy premium items from the shop	  | **`150`**
-	   	|						  |
 **Multiplier**  | The base rate of how much the winnings are	  | **`5%`**
 **Experience**  | Experience points you've already earned	  | **`0`**
-		|						  |
 **Wins**	| The amount of times you won a gambling game	  | **`0`**
 **Loses**	| The amount of times you lost a gambling game    | **`0`**
 **Won**		| The total coins you've spent and won from games | **`0`**
@@ -88,4 +76,4 @@ flip 	 | flip a coin! | `a!flip <amount>` | true
 
 ### Credits
 * [Number Formatter](https://github.com/atlasbot/community-actions/tree/master/Snippets/Emrison-NumberFormatter) - JaM#8608
-* <a href="https://regexr.com" target="_blank">regexr.com</a> - My lovely assistant for Regular Expressions.
+* <a href="https://regexr.com" target="_blank">regexr.com</a> - My assistant for Regular Expressions
