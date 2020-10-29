@@ -18,7 +18,7 @@ A very fun, easy-to-use gambling game made for Atlas.
 
 1. In order for users to use those commands, make sure you whitelist them (and yourself of course) using the following command:
 	* `a!currency whitelist @user` (Optional: leave @user empty if you'll whitelist yourself)
-	* This will create a key named `{user.id}_data` on your persistent storage. See <a href="#currency-data-structure">an example</a> of a key with other info about it as well.
+	* This will create a key named `{user.id}_data` on your persistent storage. See <a href="#currency-data-structure">a table of key defenitions and values</a> to view what each keys represent.
 	```yaml
 	Pocket: 50000
 	Vault: 100000
@@ -65,6 +65,24 @@ flip 	 | flip a coin! | `a!flip <amount>` | true
 <div id="currency-data-structure">
 	
 ### Data Structure
+> **Key Name**\
+`{user.id}_data`
+
+**Key Names**
+    Key	   	| 		Description 		    	  | Default Value 
+    :-:	   	| 		:---------: 		    	  | :-----------: 
+**Pocket** 	| The current amount on a user's pocket  	  | **`50,000`**
+**Vault**  	| The space where the user store coins   	  | **`100,000`**
+**Space**  	| The amount of space to hold coins on vault 	  | **`100,000`**
+**Gems**   	| Used to buy premium items from the shop	  | **`150`**
+	   	|						  |
+**Multiplier**  | The base rate of how much the winnings are	  | **`5%`**
+**Experience**  | Experience points you've already earned	  | **`0`**
+		|						  |
+**Wins**	| The amount of times you won a gambling game	  | **`0`**
+**Loses**	| The amount of times you lost a gambling game    | **`0`**
+**Won**		| The total coins you've spent and won from games | **`0`**
+**Lost**	| The total coins you've lost from games	  | **`0`**
 
 </div>
 
