@@ -25,8 +25,8 @@ The game includes a total of **around 20-25** actions. It works properly when al
 
 > **Legend:** **<>** - required arguments ; **[]** - optional arguments
 
-    Command  	| 			Description					| Usage 		 | Requires Whitelist
-   :-------: 	| 			:---------: 					| :---: 		 | :----------------:
+Command  	| 			Description					| Usage 		 | Requires Whitelist
+:--------: 	| 			:---------: 					| :---: 		 | :----------------:
 **currency** 	| your tool to control the whole currency system 			| `a!currency <...opts>` | 	false
 **help** 	| leave any command arguments **empty** to view the usage of a command  | `a!gamble`, `a!give`   | 	true
 **balance**	| check your balance or someone else's					| `a!balance @user` 	 | 	true
@@ -44,8 +44,8 @@ A user's data includes multiple values. These values are used to interact with t
 
 > **Key Name:** `{user.id}_data`
 
-    Key	   	| 		Description 		    	  	  | Default Value 
-   :---:   	| 		:---------: 		    	  	  | :-----------: 
+Key	   	| 		Description 		    	  	  | Default Value 
+:---:   	| 		:---------: 		    	  	  | :-----------: 
 **Pocket** 	| The amount used for buying items and gambling coins  	  | **`50,000`**
 **Vault**  	| A *safe* place to store user coins	   	  	  | **`100,000`**
 **Space**  	| The capacity of a user's vault		  	  | **`100,000`**
