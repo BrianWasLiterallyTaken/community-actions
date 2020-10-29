@@ -21,21 +21,28 @@ The game is plug-and-play. Just follow the [`instructions on how to import actio
 * **Option B** — Whitelist a user manually by running **`a!currency whitelist @user`** and it'll set-up their profile. Leave **`@user`** empty if you wanna whitelist yourself.
 
 ## Command Information
-The game includes a total of **around 20-25** actions. It works properly when all actions are present. Actions flagged as "important" is the main part of the game which is **required to be added** while actions flagged as "voluntary" are actions that **could not** be added. Even though they can't be added, It's still recommended to add them for a fully functional and efficient system for your server.
+The game includes a total of **around 20-25** actions. It works properly when all actions are present. Actions flagged as "important" is the main part of the game which is **required to be added** while actions flagged as "voluntary" are actions that **can or cannot** be added. Even though they can't be added, It's still recommended to add them for a fully functional and efficient system for your server.
 
 > **Legend:** **<>** - required arguments ; **[]** - optional arguments
 
-Command  	| 			Description					| Usage 		 | Requires Whitelist
-:--------: 	| 			:---------: 					| :---: 		 | :----------------:
-**currency** 	| your tool to control the whole currency system 			| `a!currency <...opts>` | 	false
-**help** 	| leave any command arguments **empty** to view the usage of a command  | `a!gamble`, `a!give`   | 	true
-**balance**	| check your balance or someone else's					| `a!balance @user` 	 | 	true
-**give** 	| give other user some coins, the higher share, the higher tax		| `a!give <amount> @user`| 	true
-**withdraw** 	| withdraw coins and put it on your pocket				| `a!withdraw <amount>`  | 	true
-**deposit**  	| deposit some coins into your vault					| `a!deposit <amount>`   | 	true
-**gamble**   	| roll a dice and win up to **250%** of your bet			| `a!gamble <amount>`    | 	true
-**slots**    	| use the slot machine to win by matching either **2** or **3** emojis	| `a!slots <amount>`     | 	true
-**flip** 	| take your chances at winning **100%** of your bet by flipping a coin 	| `a!flip <amount>`      | 	true
+Command  	| 			Description						| Usage 		   | Flags
+:--------: 	| 			:---------: 						| :---: 		   | :---:
+**currency** 	| your tool to control the whole currency system 				| `a!currency <...opts>`   | important
+**help** 	| leave any command arguments **empty** to view the usage of a command  	| `a!gamble`, `a!give`     | N/A
+**balance**	| check your balance or someone else's						| `a!balance @user` 	   | important
+**give** 	| give other user some coins, the higher share, the higher tax			| `a!give <amount> @user`  | important
+**withdraw** 	| withdraw coins and put it on your pocket					| `a!withdraw <amount>`    | important
+**deposit**  	| deposit some coins into your vault						| `a!deposit <amount>`     | important
+**gamble**   	| roll a dice and win up to **250%** of your bet				| `a!gamble <amount>`      | important
+**slots**    	| use the slot machine to win by matching either **2** or **3** emojis		| `a!slots <amount>`       | voluntary
+**flip** 	| take your chances at winning **100%** of your bet by flipping a coin 		| `a!flip <amount>`        | voluntary
+**beg**		| ask some random celebrity, some random big company or anyone for coins	| `a!beg`		   | important
+**search**	| search for coins somewhere, you can die from it so beware			| `a!search`		   | voluntary
+**profile**	| fetch mahority keys from your profile and shows your overall progress		| `a!profile`		   | important
+**item**	| view the shop, buy/sell items from the shop or use/deactivate an active item	| `a!item <..opt>`	   | voluntary
+**work**	| work for something, you get fired if your gambling stats are weird and bad	| `a!work <[..opt]>`	   | voluntary
+**gift**	| gift any amount of any items from your inventory to other users		| `a!gift <#> <item> @user`| voluntary
+**trade**	| same as `a!gift` but with a fair interaction to prevent scams			| `a!trade @user <..opt>`  | voluntary
 
 <div id="currency-data-structure">
 	
