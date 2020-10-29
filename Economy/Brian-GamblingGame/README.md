@@ -15,29 +15,13 @@ A very fun, easy-to-use gambling game made for Atlas.
 * **Compatability** - The economy system works with 500 or less than members.
 
 ### Setup
+The game is plug-and-play. Just follow the [`instructions on how to import actions into your server`](../../README.MD). When whitelisting, you can choose from one of the following options:
 
-1. In order for users to use those commands, make sure you whitelist them (and yourself of course) using the following command:
-	* `a!currency whitelist @user` (Optional: leave @user empty if you'll whitelist yourself)
-	* This will create a key named `{user.id}_data` on your persistent storage. See <a href="#currency-data-structure">a table of key defenitions and values</a> to view what each keys represent.
-	```yaml
-	Pocket: 50000
-	Vault: 100000
-	Space: 100000
-	
-	Multiplier: 5
-	Experience: 1
-	
-	Wins: 0
-	Loses: 0
-	Won: 0
-	Lost: 0
-
-	Whitelisted: true
-	```
-4. You're now done! You can now play the game.
-
+* **Option A** — Running **`a!currency config autoWhitelist true`** automatically whitelists users when they use a currency command. This option is **recommended** so you don't have to spend hours, whitelisting every user in your server manually.
+* **Option B** — Whitelist a user manually by running **`a!currency whitelist @user`** and it'll set-up their profile. Leave **`@user`** empty if you wanna whitelist yourself.
 
 ### Command Information
+The game includes a total of **around 20-25** actions. It works properly when all actions are present. Actions flagged as "important" is the main part of the game which is **required to be added** while actions flagged as "voluntary" are actions that **could not** be added. Even though they can't be added, It's still recommended to add them for a fully functional, efficient and a nice addition for your server.
 > **Legend:** **<>** - required arguments \| **[]** - optional arguments
 
 Command  | Description | Usage | Requires Whitelist
@@ -55,10 +39,10 @@ flip 	 | flip a coin! | `a!flip <amount>` | true
 <div id="currency-data-structure">
 	
 ### Data Structure
+A user's data includes multiple values. These values are used to interact with the game. The "Key Name" is the name of a [`{perset}`](https://atlas.bot/documentation/tags/perset) while the table below are the values in that perset. You can hack into a perset if you know what you're doing.
 > **Key Name**\
 `{user.id}_data`
 
-**Key Names**
     Key	   	| 		Description 		    	  	  | Default Value 
    :---:   	| 		:---------: 		    	  	  | :-----------: 
 **Pocket** 	| The amount used for buying items and gambling coins  	  | **`50,000`**
@@ -66,7 +50,7 @@ flip 	 | flip a coin! | `a!flip <amount>` | true
 **Space**  	| The capacity of a user's vault		  	  | **`100,000`**
 **Gems**   	| Coins but in other currency type to buy premium items	  | **`150`**
 **Multiplier**  | The **base rate** of how much the winnings are	  | **`5%`**
-**Experience**  | Experience **points** you've already earned 	  	  | **`0`**
+**Experience**  | Experience **points** you've already earned 	  	  | **`1`**
 **Wins**	| How many **times** you've **lost** from games	  	  | **`0`**
 **Loses**	| How many **times** you've **won** from games    	  | **`0`**
 **Won**		| Overall amount you've **spent** and **lost** from games | **`0`**
@@ -76,5 +60,6 @@ flip 	 | flip a coin! | `a!flip <amount>` | true
 </div>
 
 ### Credits
+The superaction was made possible with the help of the following:
 * [Number Formatter](https://github.com/atlasbot/community-actions/tree/master/Snippets/Emrison-NumberFormatter) - JaM#8608
 * <a href="https://regexr.com" target="_blank">regexr.com</a> - My assistant for Regular Expressions
