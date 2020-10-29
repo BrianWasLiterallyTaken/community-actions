@@ -59,18 +59,19 @@ flip 	 | flip a coin! | `a!flip <amount>` | true
 `{user.id}_data`
 
 **Key Names**
-    Key	   	| 		Description 		    	  | Default Value 
-   :---:   	| 		:---------: 		    	  | :-----------: 
-**Pocket** 	| The current amount on a user's pocket  	  | **`50,000`**
-**Vault**  	| The space where the user store coins   	  | **`100,000`**
-**Space**  	| The amount of space to hold coins on vault 	  | **`100,000`**
-**Gems**   	| Used to buy premium items from the shop	  | **`150`**
-**Multiplier**  | The base rate of how much the winnings are	  | **`5%`**
-**Experience**  | Experience points you've already earned	  | **`0`**
-**Wins**	| The amount of times you won a gambling game	  | **`0`**
-**Loses**	| The amount of times you lost a gambling game    | **`0`**
-**Won**		| The total coins you've spent and won from games | **`0`**
-**Lost**	| The total coins you've lost from games	  | **`0`**
+    Key	   	| 		Description 		    	  	  | Default Value 
+   :---:   	| 		:---------: 		    	  	  | :-----------: 
+**Pocket** 	| The amount used for buying items and gambling coins  	  | **`50,000`**
+**Vault**  	| A *safe* place to store user coins	   	  	  | **`100,000`**
+**Space**  	| The capacity of a user's vault		  	  | **`100,000`**
+**Gems**   	| Coins but in other currency type to buy premium items	  | **`150`**
+**Multiplier**  | The **base rate** of how much the winnings are	  | **`5%`**
+**Experience**  | Experience **points** you've already earned 	  	  | **`0`**
+**Wins**	| How many **times** you've **lost** from games	  	  | **`0`**
+**Loses**	| How many **times** you've **won** from games    	  | **`0`**
+**Won**		| Overall amount you've **spent** and **lost** from games | **`0`**
+**Lost**	| Overall amount you've **lost** from games	  	  | **`0`**
+**Whitelisted** | The state; either blocked, banned or true 	  	  | **`true`**
 
 </div>
 
