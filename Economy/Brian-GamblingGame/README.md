@@ -50,18 +50,23 @@ A very fun, easy-to-use gambling game made for Atlas.
 **<>** - required arguments\
 **[]** - optional arguments
 
-Command | Description | Usage | Permissions | Requires Whitelist
-:---: | :---: | :---: | :---: | :---:
-currency | this will serve as your tool to control the currency system | `a!currency <...opts> @user` | Manage Server | false
-help | trigger the help menu by leaving any command arguments **empty**| `a!gamble`, `a!give` | Send Messages | true
-balance | checks your or someone else's balance | `a!balance <optionalUser>` | Send Messages | true
-give | gives other user coins | `a!give <amount> @user` | Send Messages | true
-withdraw | withdraw coins from your bank | `a!withdraw <all \| max \| amount>` | Send Messages | true
-deposit | deposit coins to your bank | `a!deposit <all \| max \| amount>` | Send Messages | true
-gamble | roll a dice and win | `a!gamble <amount \| all \| max \| half \| 69k>` | Send Messages | true
-slots | use the slot machine to win a jackpot price | `a!slots <amount \| all \| max \| half \| 69k>` | Send Messages | true
+Command  | Description | Usage | Requires Whitelist
+:------: | :---------: | :---: | :----------------:
+currency | this will serve as your tool to control the currency system | `a!currency <...opts>` | false
+help 	 | trigger the help menu by leaving any command arguments **empty**| `a!gamble`, `a!give` | true
+balance	 | checks your or someone else's balance | `a!balance [@user|User#0001|User]>` | true
+give 	 | gives other user coins | `a!give <amount> @user` | true
+withdraw | withdraw coins from your bank | `a!withdraw <all\|max\|amount>` | true
+deposit  | deposit coins to your bank | `a!deposit <all\|max\|amount>` | true
+gamble   | roll a dice and win | `a!gamble <amount>` | true
+slots    | use the slot machine to win a jackpot price | `a!slots <amount>` | true
+flip 	 | flip a coin! | `a!flip <amount>` | true
 
-### <div id="currency-data-structure">### Data Structure</div>
+<div id="currency-data-structure">
+	
+### Data Structure
+
+</div>
 
 ### Credits
 * [Number Formatter](https://github.com/atlasbot/community-actions/tree/master/Snippets/Emrison-NumberFormatter) - JaM#8608
