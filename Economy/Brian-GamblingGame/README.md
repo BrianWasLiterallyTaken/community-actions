@@ -1,6 +1,6 @@
 <div align="center">
 
-# Gamble
+# Gambling Pursuit
 A very fun, easy-to-use gambling game made for Atlas.
 
 </div>
@@ -20,7 +20,9 @@ The game is plug-and-play. Just follow the [`instructions on how to import actio
 * **Option A** — Running **`a!currency config autoWhitelist true`** automatically whitelists users when they use a currency command. This option is **recommended** so you don't have to spend hours, whitelisting every user in your server manually.
 * **Option B** — Whitelist a user manually by running **`a!currency whitelist @user`** and it'll set-up their profile. Leave **`@user`** empty if you wanna whitelist yourself.
 
-## Command Information
+---------------------------
+
+### Command Information
 The game includes a total of **around 20-25** actions. It works properly when all actions are present. Actions flagged as "important" is the main part of the game which is **required to be added** while actions flagged as "voluntary" are actions that **can or cannot** be added. Even though they can't be added, It's still recommended to add them for a fully functional and efficient system for your server.
 
 > **Legend:** **<>** - required arguments ; **[]** - optional arguments
@@ -46,7 +48,7 @@ Command  	| 			Description						| Usage 		   | Flags
 
 <div id="currency-data-structure">
 	
-## Data Structure
+### Data Structure
 A user's data includes multiple values. These values are used to interact with the game. The "Key Name" is the name of a [`{perset}`](https://atlas.bot/documentation/tags/perset) while the table below are the values in that perset. You can hack into a perset if you know what you're doing.
 
 > **Key Name:** `{user.id}_data`
@@ -68,7 +70,6 @@ Key	   	| 		Description 		    	  	  | Default Value
 </div>
 
 --------------------------------------
-# Credits
-The superaction was made possible with the help of the following people and tools:
+**This superaction was made possible with the help of the following people and tools:**
 * [Number Formatter](https://github.com/atlasbot/community-actions/tree/master/Snippets/Emrison-NumberFormatter) - JaM#8608
 * <a href="https://regexr.com" target="_blank">regexr.com</a> - My assistant for Regular Expressions
