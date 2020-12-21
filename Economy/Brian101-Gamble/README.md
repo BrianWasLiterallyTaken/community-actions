@@ -16,40 +16,18 @@ A very fun, easy-to-use gambling game made for Atlas.
 
 ### Setup
 
-1. In order for users to use those commands, make sure you whitelist them (and yourself of course) using the following command:
-	* `a!currency whitelist @user` (leave @user empty if you'll whitelist yourself)
-	* This will create a key on your persistent storage with the following value: 
-	```yaml
-	Pocket: 50000
-	Vault: 100000
-	Space: 100000
-	Gems: 100
-	
-	Multiplier: 5
-	Experience: 1
-	
-	Wins: 0
-	Loses: 0
-	Won: 0
-	Lost: 0
-
-	Whitelisted: true
-	```
-	* `Pocket` starts off with `50,000` coins
-	* `Vault` and `Space` starts off with `100,000` coins equally for both values
-	* `Multiplier` is our base rate of how high or low your winnings are
-	* `Experience` whenever you reach a specific level, you gain a random multiplier
-	* `Wins` how many times you've won a game of gamble or slots
-	* `Won` overall coins you've won from games
-	* `Loses` how many times you lost a game of gamble or slots
-	* `Lost` overall coins you've lost from games
-4. You're now done! You can now play the game.
+1. Follow the instructions on how to import actions into your Atlas dashboard first.
+2. After importing, you should whitelist yourself for testing purposes first:
+	* `a!currency whitelist @user` - `@user` resolves the rest of the command arguments after `whitelist`
+	* `a!currency whitelist` - leaving the `@user` argument will auto whitelist the invocation usser
+3. You're now done! You can now play the game.
 
 
 ### Command Information
 > **Legend**\
 **<>** - required arguments\
 **[]** - optional arguments\
+
 Command | Description | Usage | Permissions | Requires Whitelist
 :---: | :---: | :---: | :---: | :---:
 currency | this will serve as your tool to control the currency system | `a!currency <...opts> @user` | Manage Server | false
